@@ -6,7 +6,7 @@
 }
 
 header {
-    background-color: rgba(5, 46, 99, 0.863);
+    background-color: rgba(5, 99, 99, 0.863);
     color: #eee;
     text-align: center;
 }
@@ -46,15 +46,15 @@ nav {
 
 .navigation a:hover {
     text-decoration: underline;
-    text-decoration-color: rgba(101, 90, 197, 0.781);
-    color: rgba(101, 90, 197, 0.781);
+    text-decoration-color: rgba(90, 197, 185, 0.781);
+    color: rgba(90, 197, 185, 0.781);
 }
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: xx-large;
-    background-color: rgba(5, 46, 99, 0.863);
-    color: #eee;
+    background-color: rgba(41, 232, 111, 0.863);
+    color: #361010;
 }
 
 h3 {
@@ -87,7 +87,7 @@ hr {
 
 }
 .card {
-    border: 2px solid black;
+    border: 2px solid rgb(113, 3, 3);
     border-radius: 8px;  
     text-align: center;
     font-size: 20px;
@@ -99,8 +99,8 @@ hr {
     display: flex;
   justify-content: center; 
   align-items: center; 
-  width: 120px;
-  height: 130px;
+  width: 150px;
+  height: 160px;
 }
 
 .crimg {
@@ -127,8 +127,8 @@ hr {
 }
 
 footer {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background: rgba(5, 46, 99, 0.863);
+    font-family: Shadows Into Light Two, Helvetica, sans-serif;
+    background: rgba(5, 99, 99, 0.863);
     padding: 2rem;
     text-align: center;
     color: #fff;
