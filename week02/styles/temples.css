@@ -1,0 +1,147 @@
+:root {
+    --main-color: #d1ffeb;
+    --main-text: #001524;
+    --heading-color: #0f7876;
+    --heading-text: #ffd1de;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header, footer{
+    background-color: var(--heading-color);
+    color: var(--heading-text);
+}
+.kanit-extralight {
+    font-family: "Kanit", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .kanit-regular {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+header {
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Nav menu */
+
+#menu {
+	font-size: 1.8rem;
+	border: 0;
+	background: none;
+	color: var(--heading-text);
+ 	position: absolute;
+	top: 0.9rem;
+    right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "✖";
+}
+
+nav {
+    display: none;
+}
+
+.nav {
+    list-style-type: none;
+}
+
+.nav a {
+    display: none;
+    color: var(--heading-text);
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 15px
+}
+
+.nav a:hover {
+    background-color: var(--main-color);
+    color: var(--main-text);
+    transition: color 0.3s, background-color 0.3s;
+    padding: 15px;
+}
+
+h1.open {
+    display: none;
+}
+
+nav.open {
+    display: flex;
+    justify-content: center;
+}
+
+.open a {
+	display: block;
+    text-align: center;
+}
+
+.active::before {
+    content: "▼";
+}
+
+/* Main content */
+
+body {
+    background-color: var(--main-color);
+}
+
+main {
+    color: var(--main-text);
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-style: normal;
+    max-width: 1000px;
+    margin:auto;
+    text-align: center;
+}
+
+
+.temples {
+    display: grid;
+    justify-content: center;
+}
+
+.temples figure{
+    margin: 10px;    
+}
+
+.temples figure img{
+    border: 1px solid #000;
+    max-width: 100%;
+    min-width: 250px;
+    height: auto
+}
+
+/* Footer content */
+
+footer {
+    padding: 15px;
+    text-align: center;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,42 @@
+@media (min-width: 910px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: inline;
+    }
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        gap: 1.3em;
+    }
+    
+    .nav a {
+        display: inline;
+    }
+
+    
+}
+
+@media (min-width: 810px){
+    .temples {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 809px) {
+    .temples {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
