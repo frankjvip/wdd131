@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Franklin Rivas | Place</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Rick Shaw | Place">
+    <meta name="author" content="Franklin Rivas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="images/statue-of-liberty.png" alt="Silver Fern" class="statue-icon">
+            New York
+            <img src="images/statue-of-liberty.png" alt="Silver Fern" class="statue-icon">
+        </h1>
+
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/New_York_City-L.jpg">
+                <source media="(min-width: 500px)" srcset="images/new york city1.webp">
+                <img src="images/new york city 1.webp" alt="New York" class="responsive-image">
+            </picture>
+
+            <!-- Data Box -->
+            <div class="info-box data">
+                <h3>New York Data</h3>
+                <ul>
+                    <li>
+                        <h3>Area:</h3>
+                        <h4>1,213.37 sq km</h4>
+                    </li>
+                    <li>
+                        <h3>Population:</h3>
+                        <h4>19,870.000</h4>
+                    </li>
+                    <li>
+                        <h3>Capital:</h3>
+                        <h4>Albany</h4>
+                    </li>
+                    <li>
+                        <h3>Languages:</h3>
+                        <h4>English</h4>
+                    </li>
+                    <li>
+                        <h3>Currency:</h3>
+                        <h4>USD</h4>
+                    </li>
+                    <li>
+                        <h3>Time Zone:</h3>
+                        <h4>UTC −05:00 (EST)
+                            • Summer (DST)	UTC −04:00 (EDT)</h4>
+                    </li>
+                    <li>
+                        <h3>Area Codes:</h3>
+                        <h4>212/646/332, 718/347/929, 917</h4>
+                    </li>
+                    <li>
+                        <h3>Website:</h3>
+                        <h4>www.nyc.gov</h4>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Weather Box -->
+            <div class="info-box weather">
+                <h3>Weather <img src="images/cloudy_night_rainy_snowy_weather_icon.png" alt="Sunny" class="weather-icon"></h3>
+                <ul>
+                    <li>Temperature: <span id="temp">-1°C</span></li>
+                    <li>Conditions: Cloudy</li>
+                    <li>Wind: <span id="wind">7 km/h</span></li>
+                    <li>Humidity: 55%</li>
+                    <li>Wind Chill: <span id="windChill">No Data</span></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="getdates"></span> Franklin Rivas | Santa Lucia, F.M., Honduras</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+
+</body>
+
+</html>
