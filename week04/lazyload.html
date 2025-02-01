@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Lazy Loading Image Demo for Improved Page Performance.">
+        <meta name="author" content="Franklin Rivas">
+        <title>Lazy Loading Demo</title>
+        <link rel="stylesheet" href="styles/lazyload.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Lazy Loading Image Demo</h1>
+        </header>
+        <main>
+            <div class="image-container">
+                <img src="images/placeholder.jpg" data-src="images.unsplah.com\daan-huttinga-pvrHwW-mk8w-unsplash.jpg" alt="Beach landscape 1" loading="lazy" width="400" height="600">
+                <img src="images/placeholder.jpg" data-src="images.unsplah.com\victor-rosario-rQ_6e8HOkik-unsplash.jpg" alt="Beach landscape 2" loading="lazy" width="400" height="600">
+                <img src="images/placeholder.jpg" data-src="images.unsplah.com\urban-vintage-DNXWtB33WWE-unsplash.jpg" alt="Beach landscape 3" loading="lazy" width="400" height="600">
+                <img src="images/placeholder.jpg" data-src="images.unsplah.com\the-beach-sunset-palm-trees-ocean-beach-hd-wallpaper-ai-generated-photo.jpg" alt="Beach landscape 4" loading="lazy" width="400" height="600">
+                <img src="images/placeholder.jpg" data-src="images.unsplah.com\eafabddf-1119-46a4-b623-4b8b514d22ff_source-aspect-ratio_default_0.jpg" alt="Beach landscape 5" loading="lazy" width="400" height="600">
+                <img src="images/placeholder.jpg" data-src="images.unsplah.com\59c1a244-0303-45e5-9035-a5100c581829.jpg" alt="Beach landscape 6" loading="lazy" width="400" height="600">
+            </div>
+        </main>
+        <footer>
+            <p>
+                &copy;<span id="copyright-year"></span>
+                Franklin Rivas | Lazy Loading Demo
+            </p>
+            <p>
+                Last Modified: <span id="last-modified"></span>
+            </p>
+        </footer>
+        <script defer src="scripts/lazyload.js"></script>
+    </body>
+</html>
