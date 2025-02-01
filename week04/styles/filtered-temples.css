@@ -1,5 +1,5 @@
 :root {
-    --dark-blue: #023047;
+    --dark-blue : #666b67;
     --yellow: #FFB703;
     --green: #606C38;
     --blue: #219EBC;
@@ -11,7 +11,7 @@ body {
     font-family: 'Lora', serif;
     line-height: 1.6;
     margin: 0;
-    background-color: #ddd;
+    background-color: #e5f6fc;
     color: var(--dark-blue);
 }
 
@@ -135,7 +135,6 @@ footer {
     display: none;
 }
 
-/* Show hamburger in small view */
 @media (max-width: 768px) {
     #menu {
         display: block;
