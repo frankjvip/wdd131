@@ -1,0 +1,236 @@
+/* Basic Styles */
+body {
+  background-color: #000000; /* Black background */
+  color: #FFFFFF; /* White text */
+  font-family: Arial, sans-serif; /* Font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #333333; /* Dark gray background */
+  color: #FFA500; /* Orange text */
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 50px; /* Adjust logo size */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #FFA500; /* Orange links */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #FFFFFF; /* White text on hover */
+}
+
+/* Banner */
+.banner {
+  background: url('banner.jpg') no-repeat center center/cover;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.banner h1 {
+  font-size: 48px;
+  color: #FFA500; /* Orange text */
+}
+
+.banner p {
+  font-size: 24px;
+  color: #FFFFFF; /* White text */
+}
+
+/* Buttons */
+.button {
+  background-color: #FFA500; /* Orange background */
+  color: #000000; /* Black text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #FF8C00; /* Dark orange background on hover */
+  color: #FFFFFF; /* White text on hover */
+}
+
+/* Image Gallery Container */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between images */
+  justify-content: center; /* Center images on the page */
+  padding: 20px;
+}
+
+.image-item {
+  position: relative; /* Needed for the overlay */
+  flex: 1 1 200px; /* Adjust image width */
+  max-width: 300px; /* Max image width */
+  text-align: center; /* Center content of each image */
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Smooth transitions */
+}
+
+.image-item:hover img {
+  transform: scale(1.1); /* Enlarge image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+  filter: brightness(70%); /* Dimming effect */
+}
+
+.image-item::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; /* Rounded corners */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.image-item:hover::after {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* Carousel Styles */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent overflow */
+  width: 100%; /* Ensure carousel occupies full width */
+  height: auto;
+  padding: 20px 0;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Center images vertically */
+  gap: 10px; /* Space between images */
+}
+
+.carousel-item {
+  position: relative; /* Needed for the overlay */
+  flex: 0 0 auto;
+  width: 150px; /* Adjust desired image size */
+  height: 200px; /* Adjust desired image height */
+  margin: 0; /* Ensure no extra margin */
+  padding: 0; /* Ensure no extra padding */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Adjust images without distortion */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Smooth transitions */
+}
+
+.carousel-item:hover img {
+  transform: scale(1.1); /* Enlarge image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+  filter: brightness(70%); /* Dimming effect */
+}
+
+.carousel-item::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; /* Rounded corners */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.carousel-item:hover::after {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* Carousel Container */
+#carouselExample {
+  width: auto;
+  height: auto;
+}
+
+.container {
+  border: 1px solid #CCCCCC; /* Light gray borders */
+}
+
+/* Suggestions Section */
+.suggestions {
+  padding: 20px;
+  text-align: center;
+}
+
+.suggestions h2 {
+  color: #FFA500; /* Orange text */
+  font-size: 28px;
+}
+
+.suggestions form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.suggestions label {
+  font-size: 16px;
+  color: #FFFFFF; /* White text */
+}
+
+.suggestions input, .suggestions textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #CCCCCC; /* Light gray border */
+  border-radius: 5px;
+  font-size: 16px;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: bottom;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+  

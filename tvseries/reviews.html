@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TVSeriesReviews - Reviews</title>
+  <link rel="stylesheet" href="styles/reviews.css">
+  <script defer src="scripts/getdates.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <img src="images/tvlogo.png" alt="Logo">
+      </div>
+      My TV Series Site
+      <nav class="nav-links">
+        <a href="tvseries.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>TV Series Reviews</h1>
+    <div id="reviews">
+      
+      
+      <script>
+        const reviews = [
+            {
+                title: "Squid Game 2",
+                rating: "⭐⭐⭐⭐⭐",
+                review: "Squid Game 2 continues the intense and thrilling story of the survivors from the first game. The series maintains the same level of tension and drama, with new challenges that are even more dangerous. The characters are well-developed, and the acting is impressive. However, some viewers might find the graphic violence a bit excessive. Overall, it's a sequel that doesn't disappoint and keeps fans on the edge of their seats."
+            },
+            {
+                title: "Yellowstone",
+                rating: "⭐⭐⭐⭐⭐",
+                review: "Yellowstone is a series that blends action, drama, and romance in the vast and beautiful landscape of Montana. The plot follows the Dutton family and their struggles to protect their ranch. The action scenes are spectacular, and the performances, especially by Kevin Costner, are exceptional. The series also addresses important social issues, although some viewers might find the episode length a bit long. Overall, it's a captivating series that keeps you hooked."
+            },
+            {
+                title: "Cobra Kai",
+                rating: "⭐⭐⭐⭐⭐",
+                review: "Cobra Kai is a series that revives the iconic Karate Kid franchise with a modern twist. The series explores the lives of Daniel LaRusso and Johnny Lawrence years after the events of the classic. The karate fights are exciting and well-choreographed, and the relationships between the characters are deep and realistic. However, some viewers might find the repetition of certain themes a bit predictable. Overall, it's a fun and nostalgic series worth watching."
+            },
+            {
+                title: "Bluey",
+                rating: "⭐⭐⭐⭐⭐",
+                review: "Bluey is a charming animated series aimed at young children that follows the adventures of Bluey, a curious puppy, and her family. The series is both educational and entertaining, with episodes that teach important lessons about friendship, family, and creativity. The characters are endearing, and the animations are vibrant and colorful. It's a series that both children and parents can enjoy together."
+            },
+            {
+                title: "Arcane",
+                rating: "⭐⭐⭐⭐",
+                review: "Arcane is an animated series that explores the world of League of Legends with a deep and thrilling narrative. The animation is stunning, and the action scenes are spectacular. The story is complex and immersive, with well-developed characters and a fantastic world. However, some viewers might find the plot a bit difficult to follow at first. Overall, it's a series that offers a unique visual and narrative experience."
+            }
+        ];
+    
+        const reviewsContainer = document.getElementById('reviews');
+    
+        reviews.forEach(review => {
+            const reviewElement = document.createElement('div');
+            reviewElement.classList.add('review');
+    
+            reviewElement.innerHTML = `
+                <h2>${review.title}</h2>
+                <p>${review.rating}</p>
+                <p>${review.review}</p>
+            `;
+    
+            reviewsContainer.appendChild(reviewElement);
+        });
+    </script>
+    
+        
+      <!-- Dynamic reviews go here -->
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 TVSeriesReviews</p>
+    <p>&copy; <span id="copyright-year"></span> Franklin Rivas | Santa Lucia, Honduras</p>
+    <p>Date Last Modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TVSeriesReviews - Home</title>
+  <link rel="stylesheet" href="styles/tvseries.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap">
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script defer src="scripts/getdates.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <img src="images/tvlogo.png" alt="Logo">
+      </div>
+      My TV Series Site
+      <nav class="nav-links">
+        <a href="tvseries.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+  <div class="banner">
+    <h1>Welcome to TV Series Reviews</h1>
+    <p>Discover and review your favorite TV shows</p>
+  </div>
+  
+  <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="https://ts3.mm.bing.net/th?id=OMB.iiOnSz2UUKJ7cQ_1733266213&pid=15.1">
+          <img class="d-block w-100" src="images/squid game.jpg" alt="First slide">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://ts3.mm.bing.net/th?id=OMB.0JY3Acj0PiZXtA_1735186785&pid=15.1">
+          <img class="d-block w-100" src="images/yellowstone.jpg" alt="Second slide">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://ts1.mm.bing.net/th?id=OMB._rMBFSQHw3h55w_1731002414&pid=15.1">
+          <img class="d-block w-100" src="images/cobra kai.jpg" alt="Third slide">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://ts2.mm.bing.net/th?id=OMB.qCEtVIv3bvz_cA_1729635158&pid=15.1">
+          <img class="d-block w-100" src="images/Bluey.jpg" alt="Fourth slide">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://ts4.mm.bing.net/th?id=OMB.kSjUabk4STh0iA_1733012165&pid=15.1">
+          <img class="d-block w-100" src="images/Arcane.jpg" alt="Fifth slide">
+        </a>
+      </div>
+      <!-- Add more items here -->
+    </div>
+   
+  </div>
+
+  <div class="banner">
+    <h1>Categories</h1>
+    <p>Explore the topic of your preference</p>
+  </div>
+
+  <div class="image-gallery">
+    <div class="image-item">
+      <a href="https://www.netflix.com/tudum/articles/comedies-tv-shows">
+        <img src="images/comedy.jpg" alt="Comedy Series">
+      </a>
+    </div>
+    <div class="image-item">
+      <a href="https://www.imdb.com/list/ls020396926/">
+        <img src="images/Mistery.jpg" alt="Mistery Series">
+      </a>
+    </div>
+    <!-- Add more items here -->
+  </div>
+  <section class="suggestions">
+    <h2>Suggest a Series</h2>
+    <form id="suggestion-form">
+      <label for="series-name">Series Name:</label>
+      <input type="text" id="series-name" name="series-name" required>
+      <label for="series-description">Why do you recommend it?</label>
+      <textarea id="series-description" name="series-description" required></textarea>
+      <button type="submit" class="button">Submit</button>
+    </form>
+  </section>
+
+  <button class="button" onclick="alert('Thank you for visiting my page!')">Click Here!</button>
+  <footer>
+    <p>&copy; 2025 TVSeriesReviews</p>
+    <p>&copy; <span id="copyright-year"></span> Franklin Rivas | Santa Lucia, Honduras</p>
+    <p>Date Last Modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>
